@@ -8,13 +8,12 @@ template <typename T>
 class BST : public Node<T> {
 public:
     BST() {
-        *(this->val) = nullptr;
         this->left= nullptr;
         this->right=nullptr;
     }
 
     BST(T x) {
-        *(this->val) = x;
+        this->val = x;
         this->left= nullptr;
         this->right=nullptr;
     }

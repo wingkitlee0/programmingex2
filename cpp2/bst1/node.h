@@ -6,12 +6,12 @@ class Node
 {
 public:
     /* data */
-    T* val;
+    T val;
     Node* left;
     Node* right;
 
     Node() {
-        val   = nullptr;
+        //val   = nullptr;
         left  = nullptr;
         right = nullptr; 
     };
@@ -19,16 +19,16 @@ public:
     Node(const T x) {
         std::cout << "# calling constructor of Node." << std::endl;
         std::cout << "# assigning value : " << x << std::endl;
-        *val = x;
+        val = x;
         left  = nullptr;
         right = nullptr; 
     }
 
     void setvalue(const T x) {
-        *val = x;
+        val = x;
     }
     void printvalue() {
-        std::cout << *val << std::endl;
+        std::cout << val << std::endl;
     }
 };
 
