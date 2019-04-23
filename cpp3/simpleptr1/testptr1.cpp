@@ -63,4 +63,15 @@ int main(int argc, char** argv) {
         manynodes[i].x = 50+i;
         std::cout << "nodes[" << std::setw(1) << i << "] = " << &manynodes[i] << std::endl; 
     }
+
+
+    /*
+    https://stackoverflow.com/questions/2425728/delete-vs-delete-operators-in-c/2425771
+
+    delete vs delete []
+    */
+    std::cout << "\nTest 5: delete vs delete []" << std::endl;
+
+    auto lotsofnodes = new Node[N]; // create N nodes with default constructor
+    delete [] lotsofnodes; // delete N nodes
 }
